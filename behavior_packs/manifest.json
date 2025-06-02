@@ -1,1 +1,51 @@
-
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Name of the author"
+		]
+	},
+	"header": {
+		"name": "[Name of the addon]",
+		"description": "Information about your addon",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "91f928e8-9173-4fe4-ac18-c5701b0084e5 [Change this using diff UUID]",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "106daedb-c8f9-4e9e-8a96-e8ee3a9dce34 [Change this using diff UUID]",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "5562bb2e-3be3-43ba-ae2f-efb491c560f7 [Change this using diff UUID]",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.14.0 [Read supported mojang scripts]"
+		}
+	]
+}
