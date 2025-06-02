@@ -2,7 +2,7 @@
 	"resource_pack_name": "Your Pack Name",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"goobli_screw": {
+		"[Name you want to name the texture]": {
 			"textures": "textures/items/[LOCATION OF THE TEXTURE OF THE ITEM]"
 		}
 	}
