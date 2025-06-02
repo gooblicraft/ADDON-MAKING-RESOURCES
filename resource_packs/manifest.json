@@ -1,1 +1,32 @@
-test
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": ["Name of the author"]
+	},
+	"header": {
+		"name": "[Name of the pack]",
+		"description": "[Information of your addon]",
+		"min_engine_version": [
+			1,
+			21,
+			20
+		],
+		"uuid": "713be05f-9b3b-4474-8d15-068682e38632 [Change this using different UUID]",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "[Change this using different UUID]",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
