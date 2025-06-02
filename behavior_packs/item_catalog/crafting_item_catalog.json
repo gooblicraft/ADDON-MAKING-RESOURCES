@@ -1,0 +1,22 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+    "categories": [
+        {
+            "category_name": "[construction, items, nature]",
+            "groups": [
+                {
+                "group_identifier": {
+                    "icon": "your_identifier:block_name",
+                    "name": "your_identifier:itemGroup.name.group_name"
+                },
+                "items": [
+                    "your_identifier:block_name1",
+                    "your_identifier:block_name1"
+                ]
+                }
+                ]
+            }
+        ]
+    }
+}
