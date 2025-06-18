@@ -1,0 +1,124 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "your_identifier:name_of_the_block",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.group_where_the_block_is"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"goobli:variant": [0,1,2]
+			}
+		},
+		"components": {
+			"minecraft:display_name": "Name of the block",
+			"minecraft:geometry": "geometry.name_of_the_model",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "name_of_the_texture",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8, 0, -8
+				],
+				"size": [
+					16, 16, 16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:custom_components": [
+				"goobli:rotate",
+				"goobli:sit"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('goobli:variant') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.model_name_main"
+				}
+			},
+			{
+				"condition": "q.block_state('goobli:variant') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.model_name_left"
+				}
+			},
+			{
+				"condition": "q.block_state('goobli:variant') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.model_name_right"
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}
