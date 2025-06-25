@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "your_identifier:name_of_the_block",
 			"menu_category": {
-				"category": "items",
+				"category": "[items. construction, nature, equipment]",
 				"group": "itemGroup.name.group_where_the_block_is"
 			},
 			"traits": {
@@ -19,6 +19,7 @@
 			}
 		},
 		"components": {
+			"tag:block_custom_tag": {},
 			"minecraft:display_name": "Name of the block",
 			"minecraft:geometry": "geometry.name_of_the_model",
 			"minecraft:material_instances": {
