@@ -4,7 +4,7 @@
     "description": {
       "identifier": "your_identifier:block_name",
       "menu_category": {
-        "category": "construction"
+        "category": "[items. construction, nature, equipment]"
       },
       "states": {
         "custom:up": [false, true],
@@ -20,6 +20,7 @@
       }
     },
     "components": {
+      "tag:block_custom_tag": {},
       "minecraft:display_name": "Block Displayed Name",
       "minecraft:custom_components": [
         "custom:connectedGlassComp"
